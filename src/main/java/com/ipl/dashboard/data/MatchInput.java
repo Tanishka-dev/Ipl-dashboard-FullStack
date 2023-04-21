@@ -1,7 +1,9 @@
 package com.ipl.dashboard.data;
 
+import java.time.LocalDate;
+
 public class MatchInput {
-    private long match_id;
+    private String match_id;
     private String season;
     private String date;
     private String city;
@@ -12,14 +14,14 @@ public class MatchInput {
     private String toss_decision;
     private String player_of_match;
     private String winner;
-    private int winner_wickets;
-    private int winner_runs;
+    private String winner_wickets;
+    private String winner_runs;
     private String outcome;
     private String result_type;
     private String results;
     private String gender;
     private String event;
-    private int match_number;
+    private String match_number;
     private String umpire1;
     private String umpire2;
     private String reserve_umpire;
@@ -29,11 +31,11 @@ public class MatchInput {
     private String method;
     private String date_1;
 
-    public long getMatchId() {
+    public String getMatchId() {
         return match_id;
     }
 
-    public void setMatchId(long match_id) {
+    public void setMatchId(String match_id) {
         this.match_id = match_id;
     }
 
@@ -117,19 +119,19 @@ public class MatchInput {
         this.winner = winner;
     }
 
-    public int getWinner_wickets() {
+    public String getWinner_wickets() {
         return winner_wickets;
     }
 
-    public void setWinner_wickets(int winner_wickets) {
+    public void setWinner_wickets(String winner_wickets) {
         this.winner_wickets = winner_wickets;
     }
 
-    public int getWinner_runs() {
+    public String getWinner_runs() {
         return winner_runs;
     }
 
-    public void setWinner_runs(int winner_runs) {
+    public void setWinner_runs(String winner_runs) {
         this.winner_runs = winner_runs;
     }
 
@@ -173,11 +175,11 @@ public class MatchInput {
         this.event = event;
     }
 
-    public int getMatch_number() {
+    public String getMatch_number() {
         return match_number;
     }
 
-    public void setMatch_number(int match_number) {
+    public void setMatch_number(String match_number) {
         this.match_number = match_number;
     }
 

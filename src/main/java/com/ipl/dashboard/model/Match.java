@@ -1,17 +1,17 @@
 package com.ipl.dashboard.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
 public class Match {
     @Id
-    private long matchId;
+    private String matchId;
     private String season;
-    private LocalDateTime date;
+    private String date;
     private String city;
     private String venue;
     private String team1;
@@ -20,34 +20,34 @@ public class Match {
     private String tossDecision;
     private String playerOfMatch;
     private String matchWinner;
-    private int matchNumber;
+    private String matchNumber;
     private String umpire1;
     private String umpire2;
     private String reserveUmpire;
-    private int winnerWickets;
-    private int winnerRuns;
+    private String winnerWickets;
+    private String winnerRuns;
 
-    public int getWinnerWickets() {
+    public String getWinnerWickets() {
         return winnerWickets;
     }
 
-    public void setWinnerWickets(int winnerWickets) {
+    public void setWinnerWickets(String winnerWickets) {
         this.winnerWickets = winnerWickets;
     }
 
-    public int getWinnerRuns() {
+    public String getWinnerRuns() {
         return winnerRuns;
     }
 
-    public void setWinnerRuns(int winnerRuns) {
+    public void setWinnerRuns(String winnerRuns) {
         this.winnerRuns = winnerRuns;
     }
 
-    public long getMatchId() {
+    public String getMatchId() {
         return matchId;
     }
 
-    public void setMatchId(long match_id) {
+    public void setMatchId(String match_id) {
         this.matchId = match_id;
     }
 
@@ -59,11 +59,11 @@ public class Match {
         this.season = season;
     }
 
-    public LocalDateTime getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(LocalDateTime date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
@@ -131,11 +131,11 @@ public class Match {
         this.matchWinner = matchWinner;
     }
 
-    public int getMatchNumber() {
+    public String getMatchNumber() {
         return matchNumber;
     }
 
-    public void setMatchNumber(int matchNumber) {
+    public void setMatchNumber(String matchNumber) {
         this.matchNumber = matchNumber;
     }
 
