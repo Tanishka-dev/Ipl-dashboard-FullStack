@@ -3,8 +3,6 @@ package com.ipl.dashboard.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 @Entity
 public class Match {
