@@ -1,7 +1,7 @@
 package com.ipl.dashboard.data;
 
 public class MatchInput {
-    private long matchId;
+    private long match_id;
     private String season;
     private String date;
     private String city;
@@ -30,11 +30,11 @@ public class MatchInput {
     private String date_1;
 
     public long getMatchId() {
-        return matchId;
+        return match_id;
     }
 
     public void setMatchId(long match_id) {
-        this.matchId = match_id;
+        this.match_id = match_id;
     }
 
     public String getSeason() {
